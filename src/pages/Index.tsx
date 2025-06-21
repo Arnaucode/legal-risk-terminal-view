@@ -5,6 +5,7 @@ import { DataRoom } from "@/components/DataRoom";
 import { SearchEvents } from "@/components/SearchEvents";
 import { RiskMap } from "@/components/RiskMap";
 import { WhatIf } from "@/components/WhatIf";
+import { ModelResponse } from "@/components/ModelResponse";
 
 const Index = () => {
   return (
@@ -16,13 +17,18 @@ const Index = () => {
         </div>
         
         {/* Sentinel - Top Center */}
-        <div className="col-span-6 row-span-2 border border-green-400 bg-gray-800">
+        <div className="col-span-6 row-span-1 border border-green-400 bg-gray-800">
           <Sentinel />
         </div>
         
         {/* Data Room - Top Right */}
         <div className="col-span-3 row-span-3 border border-green-400 bg-gray-800">
           <DataRoom />
+        </div>
+        
+        {/* Model Response - Middle Center */}
+        <div className="col-span-6 row-span-1 border border-green-400 bg-gray-800">
+          <ModelResponse />
         </div>
         
         {/* Search Events - Bottom Left */}
